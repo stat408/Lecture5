@@ -1,0 +1,59 @@
+---
+title: "Lecture 5: EDA"
+format: gfm
+editor: visual
+---
+
+## Read Dataset #1
+
+```{r, message = F}
+library(tidyverse)
+sharks <- read_csv("https://github.com/stat408/Lecture5/raw/master/shark_attacks.csv")
+```
+
+
+```{r}
+glimpse(sharks)
+```
+
+Many of these variables will require additional expertise dealing with text strings, so we'll come back to this dataset later in class.
+
+
+### Activity #1
+
+Create a figure to show shark attacks by year
+
+
+
+### Activity #2
+
+Create a figure to show shark attacks in the five countries with the most attacks.
+
+
+
+### Activity #3
+
+Create a figure to show shark attacks by year in the five countries with the most attacks.
+
+
+
+### Activity #4
+
+Create a [waffle plot](https://r-charts.com/part-whole/waffle-chart-ggplot2/) to indicate common activity when a shark attack occurred.
+
+```{r}
+library(waffle)
+
+```
+
+## Read Dataset #2
+
+```{r, message = F}
+seattle_in <- read_csv('http://math.montana.edu/ahoegh/teaching/stat408/datasets/SeattleHousing.csv')
+glimpse(seattle_in)
+```
+
+### Activity #5
+
+Pose a question and create a visualization to explore that question.
+
